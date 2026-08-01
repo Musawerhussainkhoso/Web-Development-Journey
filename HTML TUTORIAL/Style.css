@@ -41,6 +41,9 @@ body {
 
     /* Center Text */
     text-align: center;
+
+    /* Position Reference */
+    position: relative;
 }
 
 
@@ -60,6 +63,9 @@ body {
 
     /* Center Image */
     text-align: center;
+
+    /* Position Reference */
+    position: relative;
 }
 
 
@@ -81,6 +87,9 @@ body {
 
     /* Center Navigation */
     text-align: center;
+
+    /* Position Reference */
+    position: relative;
 }
 
 
@@ -134,6 +143,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -164,6 +176,15 @@ body {
     color: red;
     font-weight: bold;
     text-decoration: none;
+
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom of #about */
+    bottom: 20px;
+
+    /* 30px from left of #about */
+    left: 30px;
 }
 
 
@@ -185,6 +206,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -208,6 +232,15 @@ body {
     color: red;
     font-weight: bold;
     text-decoration: none;
+
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom */
+    bottom: 20px;
+
+    /* 30px from left */
+    left: 30px;
 }
 
 
@@ -229,6 +262,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -264,6 +300,15 @@ body {
     color: red;
     font-weight: bold;
     text-decoration: none;
+
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom */
+    bottom: 20px;
+
+    /* 30px from left */
+    left: 30px;
 }
 
 
@@ -285,6 +330,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -308,6 +356,15 @@ body {
     color: red;
     font-weight: bold;
     text-decoration: none;
+
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom */
+    bottom: 20px;
+
+    /* 30px from left */
+    left: 30px;
 }
 
 
@@ -329,6 +386,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -352,6 +412,15 @@ body {
     color: red;
     font-weight: bold;
     text-decoration: none;
+
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom */
+    bottom: 20px;
+
+    /* 30px from left */
+    left: 30px;
 }
 
 
@@ -373,6 +442,9 @@ body {
 
     /* Rounded Corners */
     border-radius: 10px;
+
+    /* Parent Position */
+    position: relative;
 }
 
 
@@ -399,6 +471,19 @@ body {
 }
 
 
+/* Back to Top Link */
+#contact > a {
+    /* Absolute Position */
+    position: absolute;
+
+    /* 20px from bottom */
+    bottom: 20px;
+
+    /* 30px from left */
+    left: 30px;
+}
+
+
 /* ============================= */
 /* Footer                        */
 /* ============================= */
@@ -418,4 +503,7 @@ body {
 
     /* Center Text */
     text-align: center;
+
+    /* Position Reference */
+    position: relative;
 }
