@@ -44,6 +44,21 @@ body {
 
     /* Position Reference */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Center content horizontally */
+    justify-content: center;
+
+    /* Center content vertically */
+    align-items: center;
+
+    /* Flex Direction */
+    flex-direction: column;
 }
 
 
@@ -66,6 +81,21 @@ body {
 
     /* Position Reference */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Center image horizontally */
+    justify-content: center;
+
+    /* Center image vertically */
+    align-items: center;
+
+    /* Items arranged vertically */
+    flex-direction: column;
 }
 
 
@@ -90,6 +120,21 @@ body {
 
     /* Position Reference */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange items vertically */
+    flex-direction: column;
+
+    /* Center items horizontally */
+    align-items: center;
+
+    /* Center items vertically */
+    justify-content: center;
 }
 
 
@@ -116,6 +161,36 @@ body {
 
     /* Space between links */
     margin: 0 8px;
+}
+
+
+/* ============================= */
+/* Navigation Links Container    */
+/* ============================= */
+
+/* 
+   If your HTML has a div around
+   navigation links, Flexbox will
+   arrange the links in a row.
+*/
+
+#navigation div {
+    display: flex;
+
+    /* Links appear side by side */
+    flex-direction: row;
+
+    /* Center links horizontally */
+    justify-content: center;
+
+    /* Center links vertically */
+    align-items: center;
+
+    /* Allow links to move to next line */
+    flex-wrap: wrap;
+
+    /* Space between links */
+    gap: 10px;
 }
 
 
@@ -146,6 +221,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -209,6 +296,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -265,6 +364,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -286,6 +397,15 @@ body {
 #programs ul {
     padding-left: 30px;
     margin: 15px 0;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Arrange list items vertically */
+    flex-direction: column;
+
+    /* Space between list items */
+    gap: 5px;
 }
 
 
@@ -333,6 +453,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -389,6 +521,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -445,6 +589,18 @@ body {
 
     /* Parent Position */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Arrange content vertically */
+    flex-direction: column;
+
+    /* Align content to the left */
+    align-items: flex-start;
 }
 
 
@@ -506,4 +662,19 @@ body {
 
     /* Position Reference */
     position: relative;
+
+    /* ============================= */
+    /* Flexbox Concept                */
+    /* ============================= */
+
+    display: flex;
+
+    /* Center footer content */
+    justify-content: center;
+
+    /* Center footer content vertically */
+    align-items: center;
+
+    /* Arrange content vertically */
+    flex-direction: column;
 }
