@@ -1,4 +1,7 @@
-/* Remove default spacing */
+/* ============================= */
+/* Remove Default Browser Space  */
+/* ============================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,67 +9,140 @@
 }
 
 
-/* Full Page */
+/* ============================= */
+/* Full Page                     */
+/* ============================= */
+
 html,
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+
+    font-family: Arial, sans-serif;
 }
 
 
-/* Main Heading */
+/* ============================= */
+/* Main Heading                  */
+/* ============================= */
+
 #home {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
 
     background-color: darkblue;
     color: white;
 
+    /* Space inside */
     padding: 30px;
+
+    /* Space outside */
+    margin: 20px 0;
+
+    /* Center Text */
+    text-align: center;
 }
 
 
-/* University Logo */
+/* ============================= */
+/* University Logo               */
+/* ============================= */
+
 #logo {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
 
+    /* Space inside */
     padding: 20px;
+
+    /* Space outside */
+    margin: 20px 0;
+
+    /* Center Image */
+    text-align: center;
 }
 
 
-/* Navigation */
+/* ============================= */
+/* Navigation                    */
+/* ============================= */
+
 #navigation {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
 
     background-color: lightblue;
-    padding: 20px;
+
+    /* Space inside */
+    padding: 20px 30px;
+
+    /* Space outside */
+    margin: 15px 0;
+
+    /* Center Navigation */
+    text-align: center;
 }
 
 
-/* Navigation Links */
+/* Navigation Heading */
+#navigation h2 {
+    color: darkblue;
+
+    /* Space below heading */
+    margin-bottom: 15px;
+}
+
+
+/* ============================= */
+/* Navigation Links              */
+/* ============================= */
+
 #navigation a {
     color: darkblue;
     font-size: 18px;
+    font-weight: bold;
+
+    /* Remove Underline */
     text-decoration: none;
+
+    /* Space between links */
+    margin: 0 8px;
 }
 
 
-/* About Section */
+/* Navigation Hover */
+#navigation a:hover {
+    color: red;
+}
+
+
+/* ============================= */
+/* About Section                 */
+/* ============================= */
+
 #about {
     width: 90%;
-    height: 250px;
+    min-height: 250px;
 
     background-color: lightgray;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
 /* About Heading */
 #about h2 {
     color: darkblue;
+
+    /* Space below heading */
+    margin-bottom: 15px;
 }
 
 
@@ -74,77 +150,272 @@ body {
 #about p {
     color: black;
     font-size: 18px;
+
+    /* Space between lines */
     line-height: 1.5;
+
+    /* Space around paragraph */
+    margin: 15px 0;
 }
 
 
 /* About Link */
 #about a {
     color: red;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
-/* Admissions Section */
+/* ============================= */
+/* Admissions Section            */
+/* ============================= */
+
 #admission {
     width: 90%;
-    height: 200px;
+    min-height: 200px;
 
     background-color: lightyellow;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
-/* Programs Section */
+/* Admissions Heading */
+#admission h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* Admissions Paragraph */
+#admission p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+
+/* Admissions Link */
+#admission a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* Programs Section              */
+/* ============================= */
+
 #programs {
     width: 90%;
-    height: 250px;
+    min-height: 250px;
 
     background-color: lightgreen;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
-/* Departments Section */
+/* Programs Heading */
+#programs h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* Programs Paragraph */
+#programs p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+
+/* Programs List */
+#programs ul {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+
+/* Programs List Items */
+#programs li {
+    padding: 5px;
+}
+
+
+/* Programs Link */
+#programs a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* Departments Section           */
+/* ============================= */
+
 #departments {
     width: 90%;
-    height: 200px;
+    min-height: 200px;
 
     background-color: lightblue;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
-/* Research Section */
+/* Departments Heading */
+#departments h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* Departments Paragraph */
+#departments p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+
+/* Departments Link */
+#departments a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* Research Section              */
+/* ============================= */
+
 #research {
     width: 90%;
-    height: 200px;
+    min-height: 200px;
 
     background-color: lightgray;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
-/* Contact Section */
+/* Research Heading */
+#research h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* Research Paragraph */
+#research p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+
+/* Research Link */
+#research a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* Contact Section               */
+/* ============================= */
+
 #contact {
     width: 90%;
-    height: 250px;
+    min-height: 250px;
 
     background-color: lightpink;
+
+    /* Space inside */
     padding: 30px;
+
+    /* Center Section */
     margin: 20px auto;
+
+    /* Rounded Corners */
+    border-radius: 10px;
 }
 
 
-/* Footer */
+/* Contact Heading */
+#contact h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Paragraph */
+#contact p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+
+/* Contact Links */
+#contact a {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
+
 #footer {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
 
     background-color: black;
     color: white;
+
+    /* Space inside */
     padding: 20px;
+
+    /* Space outside */
+    margin: 20px 0;
+
+    /* Center Text */
+    text-align: center;
 }
