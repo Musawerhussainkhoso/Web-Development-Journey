@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-/* Full page */
+
+/* Full Page */
 html,
 body {
     width: 100%;
@@ -15,20 +16,30 @@ body {
 
 /* Main Heading */
 #home {
+    width: 100%;
+    height: 100px;
+
     background-color: darkblue;
     color: white;
+
     padding: 30px;
 }
 
 
 /* University Logo */
 #logo {
+    width: 100%;
+    height: 300px;
+
     padding: 20px;
 }
 
 
 /* Navigation */
 #navigation {
+    width: 100%;
+    height: 100px;
+
     background-color: lightblue;
     padding: 20px;
 }
@@ -44,9 +55,12 @@ body {
 
 /* About Section */
 #about {
+    width: 90%;
+    height: 250px;
+
     background-color: lightgray;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
@@ -72,46 +86,64 @@ body {
 
 /* Admissions Section */
 #admission {
+    width: 90%;
+    height: 200px;
+
     background-color: lightyellow;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
 /* Programs Section */
 #programs {
+    width: 90%;
+    height: 250px;
+
     background-color: lightgreen;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
 /* Departments Section */
 #departments {
+    width: 90%;
+    height: 200px;
+
     background-color: lightblue;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
 /* Research Section */
 #research {
+    width: 90%;
+    height: 200px;
+
     background-color: lightgray;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
 /* Contact Section */
 #contact {
+    width: 90%;
+    height: 250px;
+
     background-color: lightpink;
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
 /* Footer */
 #footer {
+    width: 100%;
+    height: 100px;
+
     background-color: black;
     color: white;
     padding: 20px;
