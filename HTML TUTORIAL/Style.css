@@ -1,6 +1,6 @@
-/* ============================= */
-/* Remove Default Browser Space  */
-/* ============================= */
+/* ========================================= */
+/* RESET                                     */
+/* ========================================= */
 
 * {
     margin: 0;
@@ -9,745 +9,239 @@
 }
 
 
-/* ============================= */
-/* Full Page                     */
-/* ============================= */
-
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-
-    font-family: Arial, sans-serif;
-}
-
-
-/* ============================= */
-/* Main Heading                  */
-/* ============================= */
-
-#home {
-    width: 100%;
-    min-height: 100px;
-
-    background-color: darkblue;
-    color: white;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Space outside */
-    margin: 20px 0;
-
-    /* Center Text */
-    text-align: center;
-
-    /* Position Reference */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Center content horizontally */
-    justify-content: center;
-
-    /* Center content vertically */
-    align-items: center;
-
-    /* Flex Direction */
-    flex-direction: column;
-}
-
-
-/* ============================= */
-/* University Logo               */
-/* ============================= */
-
-#logo {
-    width: 100%;
-    min-height: 300px;
-
-    /* Space inside */
-    padding: 20px;
-
-    /* Space outside */
-    margin: 20px 0;
-
-    /* Center Image */
-    text-align: center;
-
-    /* Position Reference */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Center image horizontally */
-    justify-content: center;
-
-    /* Center image vertically */
-    align-items: center;
-
-    /* Items arranged vertically */
-    flex-direction: column;
-}
-
-
-/* ============================= */
-/* Navigation                    */
-/* ============================= */
-
-#navigation {
-    width: 100%;
-    min-height: 100px;
-
-    background-color: lightblue;
-
-    /* Space inside */
-    padding: 20px 30px;
-
-    /* Space outside */
-    margin: 15px 0;
-
-    /* Center Navigation */
-    text-align: center;
-
-    /* Position Reference */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange items vertically */
-    flex-direction: column;
-
-    /* Center items horizontally */
-    align-items: center;
-
-    /* Center items vertically */
-    justify-content: center;
-}
-
-
-/* Navigation Heading */
-#navigation h2 {
-    color: darkblue;
-
-    /* Space below heading */
-    margin-bottom: 15px;
-}
-
-
-/* ============================= */
-/* Navigation Links              */
-/* ============================= */
-
-#navigation a {
-    color: darkblue;
-    font-size: 18px;
-    font-weight: bold;
-
-    /* Remove Underline */
-    text-decoration: none;
-
-    /* Space between links */
-    margin: 0 8px;
-}
-
-
-/* ============================= */
-/* Navigation Links Container    */
-/* ============================= */
-
-/* 
-   If your HTML has a div around
-   navigation links, Flexbox will
-   arrange the links in a row.
-*/
-
-#navigation div {
-    display: flex;
-
-    /* Links appear side by side */
-    flex-direction: row;
-
-    /* Center links horizontally */
-    justify-content: center;
-
-    /* Center links vertically */
-    align-items: center;
-
-    /* Allow links to move to next line */
-    flex-wrap: wrap;
-
-    /* Space between links */
-    gap: 10px;
-}
-
-
-/* Navigation Hover */
-#navigation a:hover {
-    color: red;
-}
-
-
-/* ============================= */
-/* About Section                 */
-/* ============================= */
-
-#about {
-    width: 90%;
-    min-height: 250px;
-
-    background-color: lightgray;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* About Heading */
-#about h2 {
-    color: darkblue;
-
-    /* Space below heading */
-    margin-bottom: 15px;
-}
-
-
-/* About Paragraph */
-#about p {
-    color: black;
-    font-size: 18px;
-
-    /* Space between lines */
-    line-height: 1.5;
-
-    /* Space around paragraph */
-    margin: 15px 0;
-}
-
-
-/* About Link */
-#about a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom of #about */
-    bottom: 20px;
-
-    /* 30px from left of #about */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Admissions Section            */
-/* ============================= */
-
-#admission {
-    width: 90%;
-    min-height: 200px;
-
-    background-color: lightyellow;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* Admissions Heading */
-#admission h2 {
-    color: darkblue;
-    margin-bottom: 15px;
-}
-
-
-/* Admissions Paragraph */
-#admission p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 15px 0;
-}
-
-
-/* Admissions Link */
-#admission a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom */
-    bottom: 20px;
-
-    /* 30px from left */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Programs Section              */
-/* ============================= */
-
-#programs {
-    width: 90%;
-    min-height: 250px;
-
-    background-color: lightgreen;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* Programs Heading */
-#programs h2 {
-    color: darkblue;
-    margin-bottom: 15px;
-}
-
-
-/* Programs Paragraph */
-#programs p {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-
-/* Programs List */
-#programs ul {
-    padding-left: 30px;
-    margin: 15px 0;
-
-    /* Flexbox */
-    display: flex;
-
-    /* Arrange list items vertically */
-    flex-direction: column;
-
-    /* Space between list items */
-    gap: 5px;
-}
-
-
-/* Programs List Items */
-#programs li {
-    padding: 5px;
-}
-
-
-/* Programs Link */
-#programs a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom */
-    bottom: 20px;
-
-    /* 30px from left */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Departments Section           */
-/* ============================= */
-
-#departments {
-    width: 90%;
-    min-height: 200px;
-
-    background-color: lightblue;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* Departments Heading */
-#departments h2 {
-    color: darkblue;
-    margin-bottom: 15px;
-}
-
-
-/* Departments Paragraph */
-#departments p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 15px 0;
-}
-
-
-/* Departments Link */
-#departments a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom */
-    bottom: 20px;
-
-    /* 30px from left */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Research Section              */
-/* ============================= */
-
-#research {
-    width: 90%;
-    min-height: 200px;
-
-    background-color: lightgray;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* Research Heading */
-#research h2 {
-    color: darkblue;
-    margin-bottom: 15px;
-}
-
-
-/* Research Paragraph */
-#research p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 15px 0;
-}
-
-
-/* Research Link */
-#research a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom */
-    bottom: 20px;
-
-    /* 30px from left */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Contact Section               */
-/* ============================= */
-
-#contact {
-    width: 90%;
-    min-height: 250px;
-
-    background-color: lightpink;
-
-    /* Space inside */
-    padding: 30px;
-
-    /* Center Section */
-    margin: 20px auto;
-
-    /* Rounded Corners */
-    border-radius: 10px;
-
-    /* Parent Position */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-
-    /* Align content to the left */
-    align-items: flex-start;
-}
-
-
-/* Contact Heading */
-#contact h2 {
-    color: darkblue;
-    margin-bottom: 15px;
-}
-
-
-/* Contact Paragraph */
-#contact p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 15px 0;
-}
-
-
-/* Contact Links */
-#contact a {
-    color: darkblue;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-/* Back to Top Link */
-#contact > a {
-    /* Absolute Position */
-    position: absolute;
-
-    /* 20px from bottom */
-    bottom: 20px;
-
-    /* 30px from left */
-    left: 30px;
-}
-
-
-/* ============================= */
-/* Footer                        */
-/* ============================= */
-
-#footer {
-    width: 100%;
-    min-height: 100px;
-
-    background-color: black;
-    color: white;
-
-    /* Space inside */
-    padding: 20px;
-
-    /* Space outside */
-    margin: 20px 0;
-
-    /* Center Text */
-    text-align: center;
-
-    /* Position Reference */
-    position: relative;
-
-    /* ============================= */
-    /* Flexbox Concept                */
-    /* ============================= */
-
-    display: flex;
-
-    /* Center footer content */
-    justify-content: center;
-
-    /* Center footer content vertically */
-    align-items: center;
-
-    /* Arrange content vertically */
-    flex-direction: column;
-}
-/* ================================= */
-/* SMOOTH SCROLLING                   */
-/* ================================= */
+/* ========================================= */
+/* HTML                                      */
+/* ========================================= */
 
 html {
     scroll-behavior: smooth;
 }
 
 
-/* ================================= */
-/* BODY                               */
-/* ================================= */
+/* ========================================= */
+/* BODY                                      */
+/* ========================================= */
 
 body {
-    background-color: #f4f7fb;
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eef5ff,
+        #ffffff,
+        #eaf7ff
+    );
+
     color: #222;
 }
 
 
-/* ================================= */
-/* MAIN HEADING - MODERN DESIGN       */
-/* ================================= */
+/* ========================================= */
+/* MAIN HEADING / HERO                       */
+/* ========================================= */
 
 #home {
-    background: linear-gradient(135deg, darkblue, #0077b6);
-    border-radius: 0 0 25px 25px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    min-height: 180px;
+
+    background: linear-gradient(
+        135deg,
+        #001f5b,
+        #003c8f,
+        #0077b6
+    );
+
+    color: white;
+
+    padding: 50px 20px;
+
+    margin: 0;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 
-/* ================================= */
-/* LOGO                               */
-/* ================================= */
+/* Decorative Glow */
+
+#home::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    top: -100px;
+
+    left: -80px;
+}
+
+
+#home::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    bottom: -120px;
+
+    right: -80px;
+}
+
+
+/* Main Heading */
+
+#home h1 {
+
+    font-size: 38px;
+
+    letter-spacing: 1px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ========================================= */
+/* LOGO                                      */
+/* ========================================= */
+
+#logo {
+
+    width: 100%;
+
+    min-height: 350px;
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: white;
+}
+
 
 #logo img {
+
+    width: 500px;
+
+    max-width: 90%;
+
+    height: auto;
+
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    transition: transform 0.4s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.5s ease;
 }
 
 
-/* Logo Hover Effect */
+/* Logo Hover */
 
 #logo img:hover {
-    transform: scale(1.05);
+
+    transform: scale(1.05) rotate(1deg);
+
+    box-shadow:
+        0 15px 40px rgba(0, 60, 143, 0.4);
 }
 
 
-/* ================================= */
-/* NAVIGATION                        */
-/* ================================= */
+/* ========================================= */
+/* NAVIGATION                                */
+/* ========================================= */
 
 #navigation {
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 
-    /* Sticky Navigation */
+    width: 100%;
+
+    padding: 18px 20px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
     position: sticky;
+
     top: 0;
 
     z-index: 1000;
+
+    text-align: center;
+}
+
+
+/* Navigation Heading */
+
+#navigation h2 {
+
+    color: #003c8f;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
 }
 
 
 /* Navigation Links */
 
 #navigation a {
+
     display: inline-block;
+
+    color: #003c8f;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
     padding: 10px 15px;
-    border-radius: 20px;
+
+    margin: 5px;
+
+    border-radius: 25px;
+
     transition: all 0.3s ease;
 }
 
@@ -755,15 +249,21 @@ body {
 /* Navigation Hover */
 
 #navigation a:hover {
-    background-color: darkblue;
+
+    background-color: #003c8f;
+
     color: white;
+
     transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 60, 143, 0.3);
 }
 
 
-/* ================================= */
-/* ALL SECTIONS                      */
-/* ================================= */
+/* ========================================= */
+/* ALL MAIN SECTIONS                         */
+/* ========================================= */
 
 #about,
 #admission,
@@ -772,14 +272,26 @@ body {
 #research,
 #contact {
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    width: 90%;
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    margin: 35px auto;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 
-/* Section Hover Effect */
+/* Section Hover */
 
 #about:hover,
 #admission:hover,
@@ -788,15 +300,50 @@ body {
 #research:hover,
 #contact:hover {
 
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
 
-/* ================================= */
-/* SECTION HEADINGS                 */
-/* ================================= */
+/* ========================================= */
+/* DIFFERENT SECTION COLORS                  */
+/* ========================================= */
+
+#about {
+    background: linear-gradient(135deg, #ffffff, #eaf4ff);
+}
+
+
+#admission {
+    background: linear-gradient(135deg, #ffffff, #fff8df);
+}
+
+
+#programs {
+    background: linear-gradient(135deg, #ffffff, #e9fff0);
+}
+
+
+#departments {
+    background: linear-gradient(135deg, #ffffff, #e9f8ff);
+}
+
+
+#research {
+    background: linear-gradient(135deg, #ffffff, #f2edff);
+}
+
+
+#contact {
+    background: linear-gradient(135deg, #ffffff, #ffeef5);
+}
+
+
+/* ========================================= */
+/* SECTION HEADINGS                          */
+/* ========================================= */
 
 #about h2,
 #admission h2,
@@ -805,24 +352,67 @@ body {
 #research h2,
 #contact h2 {
 
-    border-left: 5px solid darkblue;
-    padding-left: 10px;
+    color: #003c8f;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+    padding-left: 15px;
+
+    border-left: 6px solid #0077b6;
 }
 
 
-/* ================================= */
-/* PROGRAM LIST                     */
-/* ================================= */
+/* ========================================= */
+/* PARAGRAPHS                                */
+/* ========================================= */
+
+#about p,
+#admission p,
+#programs p,
+#departments p,
+#research p,
+#contact p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #444;
+}
+
+
+/* ========================================= */
+/* PROGRAM LIST                              */
+/* ========================================= */
+
+#programs ul {
+
+    list-style: none;
+
+    margin-top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
 
 #programs li {
 
     background-color: white;
 
-    margin: 5px 0;
+    padding: 15px 20px;
 
-    padding: 10px;
+    border-radius: 10px;
 
-    border-radius: 8px;
+    font-weight: bold;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
 
     transition: all 0.3s ease;
 }
@@ -832,71 +422,164 @@ body {
 
 #programs li:hover {
 
-    background-color: darkblue;
+    background-color: #003c8f;
 
     color: white;
 
     transform: translateX(10px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 60, 143, 0.3);
 }
 
 
-/* ================================= */
-/* BACK TO TOP LINKS                */
-/* ================================= */
+/* ========================================= */
+/* BACK TO TOP BUTTON                        */
+/* ========================================= */
 
 #about a,
 #admission a,
 #programs a,
 #departments a,
 #research a,
-#contact a {
+#contact > a {
+
+    display: inline-block;
+
+    color: white;
+
+    background-color: #003c8f;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-top: 25px;
 
     transition: all 0.3s ease;
 }
 
+
+/* Button Hover */
 
 #about a:hover,
 #admission a:hover,
 #programs a:hover,
 #departments a:hover,
 #research a:hover,
-#contact a:hover {
+#contact > a:hover {
 
-    color: darkblue;
+    background-color: #0077b6;
 
-    transform: translateX(5px);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 60, 143, 0.3);
 }
 
 
-/* ================================= */
-/* FOOTER                           */
-/* ================================= */
+/* ========================================= */
+/* CONTACT LINKS                             */
+/* ========================================= */
+
+#contact p a {
+
+    color: #003c8f;
+
+    background: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-decoration: underline;
+}
+
+
+#contact p a:hover {
+
+    color: #0077b6;
+
+    box-shadow: none;
+
+    transform: none;
+}
+
+
+/* ========================================= */
+/* FOOTER                                    */
+/* ========================================= */
 
 #footer {
 
-    background: linear-gradient(135deg, #001f3f, darkblue);
+    width: 100%;
 
-    border-radius: 25px 25px 0 0;
+    min-height: 150px;
 
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+        135deg,
+        #001f5b,
+        #003c8f
+    );
+
+    color: white;
+
+    padding: 40px 20px;
+
+    margin-top: 50px;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
 }
 
 
-/* ================================= */
-/* RESPONSIVE DESIGN                */
-/* ================================= */
+#footer p {
+
+    line-height: 2;
+
+    font-size: 16px;
+}
+
+
+/* ========================================= */
+/* RESPONSIVE DESIGN                         */
+/* ========================================= */
 
 @media (max-width: 768px) {
 
-    #logo img {
-        width: 90%;
-        height: auto;
+    #home h1 {
+
+        font-size: 26px;
+
     }
 
-    #navigation a {
-        margin: 5px;
-        font-size: 15px;
+
+    #logo img {
+
+        width: 90%;
+
     }
+
+
+    #navigation a {
+
+        font-size: 14px;
+
+        padding: 8px 12px;
+
+    }
+
 
     #about,
     #admission,
@@ -904,8 +587,23 @@ body {
     #departments,
     #research,
     #contact {
-        width: 95%;
-        padding: 20px;
+
+        width: 92%;
+
+        padding: 25px;
+
+    }
+
+
+    #about h2,
+    #admission h2,
+    #programs h2,
+    #departments h2,
+    #research h2,
+    #contact h2 {
+
+        font-size: 23px;
+
     }
 
 }
