@@ -1,6 +1,6 @@
-/* ========================================= */
-/* RESET                                     */
-/* ========================================= */
+/* ================================================= */
+/* RESET                                             */
+/* ================================================= */
 
 * {
     margin: 0;
@@ -9,18 +9,18 @@
 }
 
 
-/* ========================================= */
-/* HTML                                      */
-/* ========================================= */
+/* ================================================= */
+/* HTML                                              */
+/* ================================================= */
 
 html {
     scroll-behavior: smooth;
 }
 
 
-/* ========================================= */
-/* BODY                                      */
-/* ========================================= */
+/* ================================================= */
+/* BODY                                              */
+/* ================================================= */
 
 body {
     width: 100%;
@@ -39,9 +39,9 @@ body {
 }
 
 
-/* ========================================= */
-/* MAIN HEADING / HERO                       */
-/* ========================================= */
+/* ================================================= */
+/* MAIN HEADING / HERO SECTION                       */
+/* ================================================= */
 
 #home {
 
@@ -49,11 +49,14 @@ body {
     min-height: 180px;
 
     background: linear-gradient(
-        135deg,
+        -45deg,
         #001f5b,
         #003c8f,
-        #0077b6
+        #0077b6,
+        #005f73
     );
+
+    background-size: 400% 400%;
 
     color: white;
 
@@ -71,15 +74,42 @@ body {
 
     flex-direction: column;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-
     position: relative;
 
     overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.2);
+
+    animation:
+        gradientMove 8s ease infinite;
 }
 
 
-/* Decorative Glow */
+/* ================================================= */
+/* ANIMATED GRADIENT                                 */
+/* ================================================= */
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+/* ================================================= */
+/* DECORATIVE CIRCLES                               */
+/* ================================================= */
 
 #home::before {
 
@@ -91,13 +121,15 @@ body {
 
     height: 250px;
 
-    background: rgba(255, 255, 255, 0.1);
+    background:
+        rgba(255, 255, 255, 0.08);
 
     border-radius: 50%;
 
     top: -100px;
 
     left: -80px;
+
 }
 
 
@@ -107,21 +139,25 @@ body {
 
     position: absolute;
 
-    width: 250px;
+    width: 300px;
 
-    height: 250px;
+    height: 300px;
 
-    background: rgba(255, 255, 255, 0.08);
+    background:
+        rgba(255, 255, 255, 0.08);
 
     border-radius: 50%;
 
-    bottom: -120px;
+    bottom: -150px;
 
-    right: -80px;
+    right: -100px;
+
 }
 
 
-/* Main Heading */
+/* ================================================= */
+/* MAIN HEADING                                      */
+/* ================================================= */
 
 #home h1 {
 
@@ -132,12 +168,43 @@ body {
     position: relative;
 
     z-index: 1;
+
+    animation:
+        fadeIn 1.5s ease;
+
 }
 
 
-/* ========================================= */
-/* LOGO                                      */
-/* ========================================= */
+/* ================================================= */
+/* HEADING ANIMATION                                 */
+/* ================================================= */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* ================================================= */
+/* LOGO SECTION                                      */
+/* ================================================= */
 
 #logo {
 
@@ -147,15 +214,27 @@ body {
 
     padding: 40px 20px;
 
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f1f8ff
+        );
+
     display: flex;
 
     justify-content: center;
 
     align-items: center;
 
-    background-color: white;
+    position: relative;
+
 }
 
+
+/* ================================================= */
+/* LOGO IMAGE                                        */
+/* ================================================= */
 
 #logo img {
 
@@ -168,26 +247,38 @@ body {
     border-radius: 20px;
 
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25);
+        0 10px 30px
+        rgba(0, 0, 0, 0.25);
 
-    transition: all 0.5s ease;
+    transition:
+        all 0.5s ease;
+
 }
 
 
-/* Logo Hover */
+/* ================================================= */
+/* LOGO HOVER                                        */
+/* ================================================= */
 
 #logo img:hover {
 
-    transform: scale(1.05) rotate(1deg);
+    transform:
+        scale(1.05)
+        rotate(1deg);
+
+    filter:
+        brightness(1.08);
 
     box-shadow:
-        0 15px 40px rgba(0, 60, 143, 0.4);
+        0 15px 40px
+        rgba(0, 60, 143, 0.4);
+
 }
 
 
-/* ========================================= */
-/* NAVIGATION                                */
-/* ========================================= */
+/* ================================================= */
+/* NAVIGATION                                        */
+/* ================================================= */
 
 #navigation {
 
@@ -195,10 +286,19 @@ body {
 
     padding: 18px 20px;
 
-    background: rgba(255, 255, 255, 0.95);
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    backdrop-filter:
+        blur(10px);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.4);
 
     box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.12);
+        0 5px 20px
+        rgba(0, 0, 0, 0.12);
 
     position: sticky;
 
@@ -207,10 +307,13 @@ body {
     z-index: 1000;
 
     text-align: center;
+
 }
 
 
-/* Navigation Heading */
+/* ================================================= */
+/* NAVIGATION HEADING                                */
+/* ================================================= */
 
 #navigation h2 {
 
@@ -219,10 +322,13 @@ body {
     font-size: 22px;
 
     margin-bottom: 12px;
+
 }
 
 
-/* Navigation Links */
+/* ================================================= */
+/* NAVIGATION LINKS                                  */
+/* ================================================= */
 
 #navigation a {
 
@@ -242,28 +348,37 @@ body {
 
     border-radius: 25px;
 
-    transition: all 0.3s ease;
+    transition:
+        all 0.3s ease;
+
 }
 
 
-/* Navigation Hover */
+/* ================================================= */
+/* NAVIGATION HOVER                                  */
+/* ================================================= */
 
 #navigation a:hover {
 
-    background-color: #003c8f;
+    background-color:
+        #003c8f;
 
-    color: white;
+    color:
+        white;
 
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 
     box-shadow:
-        0 5px 15px rgba(0, 60, 143, 0.3);
+        0 5px 15px
+        rgba(0, 60, 143, 0.3);
+
 }
 
 
-/* ========================================= */
-/* ALL MAIN SECTIONS                         */
-/* ========================================= */
+/* ================================================= */
+/* ALL MAIN SECTIONS                                 */
+/* ================================================= */
 
 #about,
 #admission,
@@ -274,7 +389,7 @@ body {
 
     width: 90%;
 
-    margin: 35px auto;
+    margin: 40px auto;
 
     padding: 35px;
 
@@ -282,16 +397,22 @@ body {
 
     position: relative;
 
+    overflow: hidden;
+
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.1);
+        0 8px 25px
+        rgba(0, 0, 0, 0.1);
 
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
+
 }
 
 
-/* Section Hover */
+/* ================================================= */
+/* SECTION HOVER                                     */
+/* ================================================= */
 
 #about:hover,
 #admission:hover,
@@ -300,50 +421,185 @@ body {
 #research:hover,
 #contact:hover {
 
-    transform: translateY(-8px);
+    transform:
+        translateY(-8px)
+        scale(1.01);
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.18);
+        0 20px 40px
+        rgba(0, 0, 0, 0.18);
+
 }
 
 
-/* ========================================= */
-/* DIFFERENT SECTION COLORS                  */
-/* ========================================= */
+/* ================================================= */
+/* SECTION BACKGROUNDS                               */
+/* ================================================= */
 
 #about {
-    background: linear-gradient(135deg, #ffffff, #eaf4ff);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eaf4ff
+        );
+
 }
 
 
 #admission {
-    background: linear-gradient(135deg, #ffffff, #fff8df);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff8df
+        );
+
 }
 
 
 #programs {
-    background: linear-gradient(135deg, #ffffff, #e9fff0);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #e9fff0
+        );
+
 }
 
 
 #departments {
-    background: linear-gradient(135deg, #ffffff, #e9f8ff);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #e9f8ff
+        );
+
 }
 
 
 #research {
-    background: linear-gradient(135deg, #ffffff, #f2edff);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f2edff
+        );
+
 }
 
 
 #contact {
-    background: linear-gradient(135deg, #ffffff, #ffeef5);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #ffeef5
+        );
+
 }
 
 
-/* ========================================= */
-/* SECTION HEADINGS                          */
-/* ========================================= */
+/* ================================================= */
+/* SECTION BADGES                                    */
+/* ================================================= */
+
+#about::before {
+
+    content:
+        "ABOUT MUET";
+
+}
+
+
+#admission::before {
+
+    content:
+        "ADMISSIONS";
+
+}
+
+
+#programs::before {
+
+    content:
+        "ACADEMIC PROGRAMS";
+
+}
+
+
+#departments::before {
+
+    content:
+        "DEPARTMENTS";
+
+}
+
+
+#research::before {
+
+    content:
+        "RESEARCH & INNOVATION";
+
+}
+
+
+#contact::before {
+
+    content:
+        "CONTACT";
+
+}
+
+
+#about::before,
+#admission::before,
+#programs::before,
+#departments::before,
+#research::before,
+#contact::before {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    background:
+        #003c8f;
+
+    color:
+        white;
+
+    padding:
+        8px 18px;
+
+    border-radius:
+        0 0 0 15px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+/* ================================================= */
+/* SECTION HEADINGS                                  */
+/* ================================================= */
 
 #about h2,
 #admission h2,
@@ -352,21 +608,63 @@ body {
 #research h2,
 #contact h2 {
 
-    color: #003c8f;
+    color:
+        #003c8f;
 
-    font-size: 28px;
+    font-size:
+        28px;
 
-    margin-bottom: 20px;
+    margin-bottom:
+        20px;
 
-    padding-left: 15px;
+    padding-left:
+        15px;
 
-    border-left: 6px solid #0077b6;
+    border-left:
+        6px solid
+        #0077b6;
+
 }
 
 
-/* ========================================= */
-/* PARAGRAPHS                                */
-/* ========================================= */
+/* ================================================= */
+/* HEADING DECORATION                                */
+/* ================================================= */
+
+#about h2::after,
+#admission h2::after,
+#programs h2::after,
+#departments h2::after,
+#research h2::after,
+#contact h2::after {
+
+    content:
+        "";
+
+    display:
+        block;
+
+    width:
+        60px;
+
+    height:
+        4px;
+
+    background:
+        #0077b6;
+
+    margin-top:
+        8px;
+
+    border-radius:
+        10px;
+
+}
+
+
+/* ================================================= */
+/* PARAGRAPHS                                        */
+/* ================================================= */
 
 #about p,
 #admission p,
@@ -375,67 +673,108 @@ body {
 #research p,
 #contact p {
 
-    font-size: 17px;
+    font-size:
+        17px;
 
-    line-height: 1.8;
+    line-height:
+        1.8;
 
-    color: #444;
+    color:
+        #444;
+
 }
 
 
-/* ========================================= */
-/* PROGRAM LIST                              */
-/* ========================================= */
+/* ================================================= */
+/* PROGRAM LIST                                      */
+/* ================================================= */
 
 #programs ul {
 
-    list-style: none;
+    list-style:
+        none;
 
-    margin-top: 20px;
+    margin-top:
+        20px;
 
-    display: flex;
+    display:
+        flex;
 
-    flex-direction: column;
+    flex-direction:
+        column;
 
-    gap: 10px;
+    gap:
+        10px;
+
 }
 
+
+/* ================================================= */
+/* PROGRAM CARDS                                     */
+/* ================================================= */
 
 #programs li {
 
-    background-color: white;
+    background:
+        white;
 
-    padding: 15px 20px;
+    padding:
+        15px 20px;
 
-    border-radius: 10px;
+    border-radius:
+        10px;
 
-    font-weight: bold;
+    border-left:
+        5px solid
+        #003c8f;
+
+    font-weight:
+        bold;
+
+    cursor:
+        pointer;
 
     box-shadow:
-        0 3px 10px rgba(0, 0, 0, 0.08);
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
 
-    transition: all 0.3s ease;
+    transition:
+        all 0.3s ease;
+
 }
 
 
-/* Program Hover */
+/* ================================================= */
+/* PROGRAM HOVER                                     */
+/* ================================================= */
 
 #programs li:hover {
 
-    background-color: #003c8f;
+    background:
+        #003c8f;
 
-    color: white;
+    color:
+        white;
 
-    transform: translateX(10px);
+    transform:
+        translateX(12px);
+
+    padding-left:
+        30px;
+
+    letter-spacing:
+        1px;
 
     box-shadow:
-        0 5px 15px rgba(0, 60, 143, 0.3);
+        0 8px 20px
+        rgba(0, 60, 143, 0.3);
+
 }
 
 
-/* ========================================= */
-/* BACK TO TOP BUTTON                        */
-/* ========================================= */
+/* ================================================= */
+/* BACK TO TOP BUTTONS                               */
+/* ================================================= */
 
 #about a,
 #admission a,
@@ -444,27 +783,39 @@ body {
 #research a,
 #contact > a {
 
-    display: inline-block;
+    display:
+        inline-block;
 
-    color: white;
+    color:
+        white;
 
-    background-color: #003c8f;
+    background:
+        #003c8f;
 
-    padding: 10px 18px;
+    padding:
+        10px 20px;
 
-    border-radius: 25px;
+    border-radius:
+        25px;
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
-    text-decoration: none;
+    text-decoration:
+        none;
 
-    margin-top: 25px;
+    margin-top:
+        25px;
 
-    transition: all 0.3s ease;
+    transition:
+        all 0.3s ease;
+
 }
 
 
-/* Button Hover */
+/* ================================================= */
+/* BUTTON HOVER                                      */
+/* ================================================= */
 
 #about a:hover,
 #admission a:hover,
@@ -473,110 +824,314 @@ body {
 #research a:hover,
 #contact > a:hover {
 
-    background-color: #0077b6;
+    background:
+        #0077b6;
 
-    transform: translateY(-3px);
+    transform:
+        translateY(-4px);
 
     box-shadow:
-        0 5px 15px rgba(0, 60, 143, 0.3);
+        0 8px 20px
+        rgba(0, 60, 143, 0.3);
+
 }
 
 
-/* ========================================= */
-/* CONTACT LINKS                             */
-/* ========================================= */
+/* ================================================= */
+/* BUTTON CLICK EFFECT                               */
+/* ================================================= */
+
+#about a:active,
+#admission a:active,
+#programs a:active,
+#departments a:active,
+#research a:active,
+#contact > a:active {
+
+    transform:
+        scale(0.95);
+
+}
+
+
+/* ================================================= */
+/* CONTACT LINKS                                     */
+/* ================================================= */
 
 #contact p a {
 
-    color: #003c8f;
+    color:
+        #003c8f;
 
-    background: none;
+    background:
+        none;
 
-    padding: 0;
+    padding:
+        0;
 
-    margin: 0;
+    margin:
+        0;
 
-    text-decoration: underline;
+    text-decoration:
+        underline;
+
 }
 
+
+/* ================================================= */
+/* CONTACT LINK HOVER                                */
+/* ================================================= */
 
 #contact p a:hover {
 
-    color: #0077b6;
+    color:
+        #0077b6;
 
-    box-shadow: none;
+    background:
+        none;
 
-    transform: none;
+    box-shadow:
+        none;
+
+    transform:
+        none;
+
 }
 
 
-/* ========================================= */
-/* FOOTER                                    */
-/* ========================================= */
+/* ================================================= */
+/* FOOTER                                            */
+/* ================================================= */
 
 #footer {
 
-    width: 100%;
+    width:
+        100%;
 
-    min-height: 150px;
+    min-height:
+        150px;
 
-    background: linear-gradient(
-        135deg,
-        #001f5b,
-        #003c8f
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #001f5b,
+            #003c8f,
+            #005f73
+        );
 
-    color: white;
+    color:
+        white;
 
-    padding: 40px 20px;
+    padding:
+        40px 20px;
 
-    margin-top: 50px;
+    margin-top:
+        60px;
 
-    text-align: center;
+    text-align:
+        center;
 
-    display: flex;
+    display:
+        flex;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    align-items: center;
+    align-items:
+        center;
 
-    flex-direction: column;
+    flex-direction:
+        column;
+
+    box-shadow:
+        0 -5px 20px
+        rgba(0, 0, 0, 0.15);
+
 }
 
+
+/* ================================================= */
+/* FOOTER TEXT                                       */
+/* ================================================= */
 
 #footer p {
 
-    line-height: 2;
+    line-height:
+        2;
 
-    font-size: 16px;
+    font-size:
+        16px;
+
 }
 
 
-/* ========================================= */
-/* RESPONSIVE DESIGN                         */
-/* ========================================= */
+/* ================================================= */
+/* RESPONSIVE DESIGN                                 */
+/* ================================================= */
 
 @media (max-width: 768px) {
 
+
+    /* Main Heading */
+
     #home h1 {
 
-        font-size: 26px;
+        font-size:
+            26px;
+
+        line-height:
+            1.4;
 
     }
 
 
+    /* Logo */
+
     #logo img {
 
-        width: 90%;
+        width:
+            90%;
+
+        height:
+            auto;
+
+    }
+
+
+    /* Navigation */
+
+    #navigation a {
+
+        font-size:
+            14px;
+
+        padding:
+            8px 12px;
+
+        margin:
+            4px;
+
+    }
+
+
+    /* Sections */
+
+    #about,
+    #admission,
+    #programs,
+    #departments,
+    #research,
+    #contact {
+
+        width:
+            92%;
+
+        padding:
+            25px;
+
+        margin:
+            30px auto;
+
+    }
+
+
+    /* Section Headings */
+
+    #about h2,
+    #admission h2,
+    #programs h2,
+    #departments h2,
+    #research h2,
+    #contact h2 {
+
+        font-size:
+            23px;
+
+    }
+
+
+    /* Section Badges */
+
+    #about::before,
+    #admission::before,
+    #programs::before,
+    #departments::before,
+    #research::before,
+    #contact::before {
+
+        font-size:
+            9px;
+
+        padding:
+            6px 10px;
+
+    }
+
+
+    /* Paragraph */
+
+    #about p,
+    #admission p,
+    #programs p,
+    #departments p,
+    #research p,
+    #contact p {
+
+        font-size:
+            15px;
+
+        line-height:
+            1.7;
+
+    }
+
+}
+
+
+/* ================================================= */
+/* SMALL MOBILE DEVICES                              */
+/* ================================================= */
+
+@media (max-width: 500px) {
+
+
+    #home {
+
+        min-height:
+            150px;
+
+        padding:
+            40px 15px;
+
+    }
+
+
+    #home h1 {
+
+        font-size:
+            22px;
+
+    }
+
+
+    #navigation h2 {
+
+        font-size:
+            18px;
 
     }
 
 
     #navigation a {
 
-        font-size: 14px;
+        display:
+            block;
 
-        padding: 8px 12px;
+        width:
+            80%;
+
+        margin:
+            7px auto;
 
     }
 
@@ -588,22 +1143,21 @@ body {
     #research,
     #contact {
 
-        width: 92%;
+        width:
+            94%;
 
-        padding: 25px;
+        padding:
+            20px;
+
+    }
+
+
+    #programs li:hover {
+
+        transform:
+            translateX(5px);
 
     }
 
-
-    #about h2,
-    #admission h2,
-    #programs h2,
-    #departments h2,
-    #research h2,
-    #contact h2 {
-
-        font-size: 23px;
-
-    }
 
 }
